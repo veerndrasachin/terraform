@@ -1,4 +1,6 @@
-resource "local_file" "pet" {
-filename = "pets.txt"
-content = "we love pets!"
+variable "filename" {
+default = "lion.txt"
+}
+variable "content" {
+default = "King of jungle"
 }
